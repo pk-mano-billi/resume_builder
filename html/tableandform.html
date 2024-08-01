@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>table and form</title>
 </head>
+
 <body>
- <div>
-    <table>
-        <caption>Marksheet of FA24-BTY</caption>
-        <THEAD>
-        <tr>
-            <th>Names</th>
-            <th>Physics</th>
-            <th>Biology</th>
-            <th>Molecular</th>
-            <th>Maths</th>
-            <th>Total Marks</th>
-            <th colspan="2">Average/Grade</th>
-            <!-- <th>  Grade</th> -->
-        </tr>
-    </THEAD>
-    <tbody>
-        <tr>
-        <td>Ayesha</td>
-        <td>24</td>
-        <td>25</td>
-        <td>24</td>
-        <td>23</td>
-        <td>96</td>
-        <td>(24)</td>
-        <td>A</td>
-    </tr>
-    <tr>
-        <td>Mishal</td>
-        <td>23</td>
-        <td>25</td>
-        <td>24</td>
-        <td>24</td>
-        <td>96</td>
-        <td>(23)</td>
-        <td>A</td> 
-    </tr>
-</tbody>
-    </table>
- </div>
- <div>
-    
- </div>
+    <!-- TABLE  -->
+    <div>
+        <table>
+            <caption>Marksheet of FA24-BTY</caption>
+            <THEAD>
+                <tr>
+                    <th>Names</th>
+                    <th>Physics</th>
+                    <th>Biology</th>
+                    <th>Molecular</th>
+                    <th>Maths</th>
+                    <th>Total Marks</th>
+                    <th colspan="2">Average/Grade</th>
+                    <!-- <th>  Grade</th> -->
+                </tr>
+            </THEAD>
+            <tbody>
+                <tr>
+                    <td>Ayesha</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>24</td>
+                    <td>23</td>
+                    <td>96</td>
+                    <td>(24)</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Mishal</td>
+                    <td>23</td>
+                    <td>25</td>
+                    <td>24</td>
+                    <td>24</td>
+                    <td>96</td>
+                    <td>(23)</td>
+                    <td>A</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- FORM  -->
+    <div>
+        <h1>Details for travelling</h1>
+        <form action="form.php"></form>
+        <input type="text" placeholder="Enter your name"> <br>
+        <label for="sectionida">
+            <input type="radio" value="section A" name="section" id="sectionida"> Section A
+        </label>
+        <label for="sectionidb">
+            <input type="radio" value="section B" name="section" id="sectionidb"> Section B
+        </label>
+        <label for="sectionidc">
+            <input type="radio" value="section C" name="section" id="sectionidc"> Section C
+        </label> <br>
+
+        <label for="Food">
+            <input type="checkbox" name="food" id="Food"> Food
+        </label><br>
+        <textarea name="Details" id="Details" cols="30" rows="10" placeholder="Give your feedback"></textarea>
+        <select name="Cars" id="cars">
+            <option value="bmw">BMW</option>
+            <option value="Marcedes">Marcedes</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Rolls royce">Rolls royce</option>
+        </select>
+        <iframe src="https://wikipedia.com" frameborder="0"></iframe>
+      
+    </div>
 </body>
+
 </html>
